@@ -6,6 +6,13 @@
   }
 }
 
+.container {
+  max-width: $max-width;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 *,
 *::after,
 *::before {
@@ -15,4 +22,10 @@
 body,
 html {
   font-family: "Oxygen", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  color: $highlight-color;
+  font-weight: 700;
 }

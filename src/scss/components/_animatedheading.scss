@@ -1,0 +1,28 @@
+.animate-heading {
+  overflow: hidden;
+  border-right: solid 1.5px $highlight-color;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $highlight-color;
+  }
+}

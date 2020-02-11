@@ -1,0 +1,8 @@
+@mixin col-layout($i) {
+  .col-layout-#{$i} {
+    width: calc(100% / #{$i});
+    float: left;
+  }
+}
+
+@include col-layout(2);

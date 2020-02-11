@@ -1,0 +1,17 @@
+footer {
+  padding: 40px 0;
+  text-align: center;
+  .name-logo {
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .quote-content {
+    padding: 10px 0;
+    float: left;
+  }
+  .copyright-content {
+    padding: 10px 0;
+    float: right;
+  }
+}

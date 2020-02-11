@@ -5,13 +5,19 @@ footer {
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .quote-content {
-    padding: 10px 0;
-    float: left;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $highlight-color;
+    font-size: 20px;
+    @include bp(tablet) {
+      font-size: 16px;
+    }
   }
   .copyright-content {
     padding: 10px 0;
-    float: right;
+    font-size: 12px;
   }
 }

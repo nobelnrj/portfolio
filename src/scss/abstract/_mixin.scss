@@ -1,7 +1,12 @@
+@import "./variables";
+
 @mixin col-layout($i) {
   .col-layout-#{$i} {
     width: calc(100% / #{$i});
     float: left;
+    @include bp(tablet) {
+      width: 100%;
+    }
   }
 }
 

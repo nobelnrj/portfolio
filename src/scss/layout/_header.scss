@@ -4,6 +4,9 @@ header {
   padding: 20px 0;
   z-index: 1;
   background-color: $background-color;
+  &.sticky {
+    box-shadow: 0px 0px 5px 1px #000000;
+  }
   nav {
     .name-logo {
       font-size: 30px;
@@ -12,6 +15,14 @@ header {
       span {
         margin-right: 5px;
         cursor: pointer;
+      }
+    }
+    .menu-btn {
+      float: right;
+      padding-top: 8px;
+      display: none;
+      @include bp(tablet) {
+        display: inline-block;
       }
     }
   }
@@ -27,6 +38,11 @@ header {
     color: $text-color;
     text-transform: uppercase;
     vertical-align: middle;
+    @include bp(tablet) {
+      display: block;
+      padding: 20px 0;
+      color: #ffffff;
+    }
     a {
       color: inherit;
       position: relative;
@@ -65,6 +81,22 @@ header {
           transition-delay: 0.4s;
         }
       }
+    }
+  }
+  @include bp(tablet) {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    padding: 0;
+    background-color: #000000ee;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.5s ease, padding 0.5s ease;
+    &.show {
+      height: 100vh;
+      padding: 50px 0;
     }
   }
 }

@@ -4,14 +4,32 @@
   position: relative;
   background-image: linear-gradient(#00000046, #0000009d), url(../img/12.jpg);
   background-position: center;
+  @include bp(tablet) {
+    background-image: linear-gradient(#000000a8, #0000009d),
+      url(../img/mobile-banner.jpg);
+    background-size: cover;
+    background-position: top;
+  }
   .hero-content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     .section-heading {
-      font-size: 50px;
+      font-size: 46px;
       color: $section-text-color;
       margin-bottom: 50px;
+      height: auto;
+      @include bp(tablet) {
+        font-size: 35px;
+      }
+      @include bp(phone) {
+        font-size: 21px;
+      }
+      span {
+        &.highlight {
+          text-shadow: 0 0 5px $highlight-color;
+        }
+      }
     }
   }
 }
@@ -19,6 +37,10 @@
 .personal-details {
   padding-left: 60px;
   position: relative;
+  font-size: 16px;
+  @include bp(tablet) {
+    font-size: 14px;
+  }
   img {
     width: 40px;
     height: 40px;
@@ -27,13 +49,16 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    font-size: inherit;
   }
   .personal-credit {
     color: $section-text-color;
     margin-bottom: 10px;
     text-transform: capitalize;
+    font-size: inherit;
   }
   .personal-info {
     color: $section-text-color;
+    font-size: inherit;
   }
 }

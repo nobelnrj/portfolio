@@ -1,24 +1,34 @@
 .blog-section {
   margin-top: 50px;
   padding-top: 100px;
+  @include bp(tablet) {
+    margin-top: 0;
+  }
   .section-content {
     .heading-wrapper {
       width: 400px;
-      .section-heading {
-        font-family: "Roboto Mono", monospace;
-        font-size: 36px;
-        margin-bottom: 40px;
-        height: 40px;
+      @include bp(tablet) {
+        width: 330px;
+      }
+      @include bp(phone) {
+        width: 280px;
       }
     }
     .content {
       line-height: 20px;
       padding-right: 30px;
       margin-bottom: 10px;
+      font-size: 16px;
+      @include bp(tablet) {
+        font-size: 14px;
+      }
     }
   }
   .image-container {
     height: 500px;
+    @include bp(tablet) {
+      height: 500px;
+    }
     img {
       width: 100%;
       height: 100%;

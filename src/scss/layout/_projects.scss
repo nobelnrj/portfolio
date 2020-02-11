@@ -1,14 +1,17 @@
 .projects-section {
   margin-top: 50px;
   padding-top: 100px;
+  @include bp(tablet) {
+    margin-top: 0;
+  }
   .section-content {
     .heading-wrapper {
       width: 190px;
-      .section-heading {
-        font-family: "Roboto Mono", monospace;
-        font-size: 36px;
-        margin-bottom: 40px;
-        height: 40px;
+      @include bp(tablet) {
+        width: 160px;
+      }
+      @include bp(phone) {
+        width: 140px;
       }
     }
   }
@@ -16,6 +19,9 @@
     height: 420px;
     overflow: hidden;
     white-space: nowrap;
+    @include bp(tablet) {
+      height: 220px;
+    }
     li {
       transform: translateX(-100%);
       display: inline-block;

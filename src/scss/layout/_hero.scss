@@ -4,6 +4,7 @@
   position: relative;
   background-image: linear-gradient(#00000046, #0000009d), url(../img/12.jpg);
   background-position: center;
+  color: $section-textColor-light;
   @include bp(tablet) {
     background-image: linear-gradient(#000000a8, #0000009d),
       url(../img/mobile-banner.jpg);
@@ -16,7 +17,6 @@
     transform: translateY(-50%);
     .section-heading {
       font-size: 46px;
-      color: $section-textColor-light;
       margin-bottom: 50px;
       height: auto;
       @include bp(tablet) {
@@ -52,13 +52,11 @@
     font-size: inherit;
   }
   .personal-credit {
-    color: $section-textColor-light;
     margin-bottom: 10px;
     text-transform: capitalize;
     font-size: inherit;
   }
   .personal-info {
-    color: $section-textColor-light;
     font-size: inherit;
   }
 }

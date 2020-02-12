@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  background-color: $background-color-light;
+}
+
 .highlight {
   color: $highlight-color-light;
   font-weight: 700;

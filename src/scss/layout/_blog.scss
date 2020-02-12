@@ -1,6 +1,7 @@
 .blog-section {
   margin-top: 50px;
   padding-top: 100px;
+  color: $text-color-light;
   @include bp(tablet) {
     margin-top: 0;
   }

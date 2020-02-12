@@ -29,3 +29,26 @@ html {
   color: $highlight-color;
   font-weight: 700;
 }
+
+.socialBtn-container {
+  width: 100%;
+  text-align: center;
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $text-color;
+      vertical-align: middle;
+      &:hover {
+        fill: $highlight-color;
+      }
+    }
+  }
+}

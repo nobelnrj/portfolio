@@ -8,6 +8,7 @@
   .section-content {
     .heading-wrapper {
       width: 400px;
+      margin-top: 20px;
       @include bp(tablet) {
         width: 330px;
       }

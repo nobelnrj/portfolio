@@ -2,10 +2,21 @@ $max-width: 1220px;
 
 // Color variables
 
-$text-color: #000000;
-$background-color: #ffffff;
-$section-text-color: #ffffff;
-$highlight-color: #3131f3;
+$text-color-light: #000000;
+$background-color-light: #ffffff;
+$section-textColor-light: #ffffff;
+$highlight-color-light: #3131f3;
+
+// theme variables
+
+$theme: (
+  "dark": (
+    "text-color-dark": #ffffff,
+    "background-color-dark": #000000,
+    "section-textColor-dark": #000000,
+    "highlight-color-dark": #3131f3
+  )
+);
 
 // breakpoints
 $tablet: 800px;

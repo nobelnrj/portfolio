@@ -16,7 +16,7 @@
     transform: translateY(-50%);
     .section-heading {
       font-size: 46px;
-      color: $section-text-color;
+      color: $section-textColor-light;
       margin-bottom: 50px;
       height: auto;
       @include bp(tablet) {
@@ -27,7 +27,7 @@
       }
       span {
         &.highlight {
-          text-shadow: 0 0 5px $highlight-color;
+          text-shadow: 0 0 5px $highlight-color-light;
         }
       }
     }
@@ -52,13 +52,13 @@
     font-size: inherit;
   }
   .personal-credit {
-    color: $section-text-color;
+    color: $section-textColor-light;
     margin-bottom: 10px;
     text-transform: capitalize;
     font-size: inherit;
   }
   .personal-info {
-    color: $section-text-color;
+    color: $section-textColor-light;
     font-size: inherit;
   }
 }

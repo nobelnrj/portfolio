@@ -1,0 +1,11 @@
+header {
+  @include theme("dark", "background-color-dark", "background-color");
+  .name-logo {
+    @include theme("dark", "text-color-dark", "color");
+  }
+  .header-menu {
+    .header-links {
+      @include theme("dark", "text-color-dark", "color");
+    }
+  }
+}
